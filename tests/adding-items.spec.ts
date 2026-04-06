@@ -77,7 +77,7 @@ test.describe("when adding multiple todo items",
         test("should be shown the count of remaining items",
             async( {page} ) => {
                 await expect(countOfRemainingToDos)
-                                    .toHaveText("2 items left");
+                                    .toHaveText("more than 1 items left");
             }
         );
     }

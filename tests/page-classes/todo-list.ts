@@ -28,7 +28,7 @@ export class TodoList{
     displayedTodoItemBasedOnText(todoText: string){
         //Instead of the li, you could even target the label inside the li directly which embeds the text, like so:
         //".todo-list label"
-        return this.page.locator(".todo-list li", { hasText: todoText });
+        return this.page.locator(".todo-list ul", { hasText: todoText });
     }
 
     checkBoxBasedOnTodoItem(todoText: string){
